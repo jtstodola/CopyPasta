@@ -24,7 +24,7 @@
     </nav>
     
     <main class="main">
-      <div class="jumbotron bg-transparent welcome">
+      <div class="jumbotron welcome">
         <div class="container">
           <h1 class="display-3">Welcome to Copy Pasta</h1>
           <p>Click on the clipboard icons to easily copy and paste the commands listed below</p>
@@ -36,21 +36,23 @@
           <div class="col-md-4 form-group">
             <label for="install">Install: </label><br>
             <input type="text" id="install" value="npm install a-thing">
-            <button class="btn" id="install-btn">
+            <button class="btn" onClick="copyInstall('install')">
               <i class="fas fa-paste"></i>
             </button>
           </div>
+          
           <div class="col-md-4 form-group">
             <label for="update">Update: </label><br>
             <input type="text" id="update" value="npm update a-thing">
-            <button class="btn" id="update-btn">
+            <button class="btn" onClick="copyInstall('update')">
               <i class="fas fa-paste"></i>
             </button>
           </div>
+          
           <div class="col-md-4 form-group">
             <label for="uninstall">Uninstall: </label><br>
             <input type="text" id="uninstall" value="npm uninstall a-thing">
-            <button class="btn" id="uninstall-btn">
+            <button class="btn" onClick="copyInstall('uninstall')">
               <i class="fas fa-paste"></i>
             </button>
           </div>
