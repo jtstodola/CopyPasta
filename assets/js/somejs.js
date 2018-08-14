@@ -1,5 +1,4 @@
-function copyInstall(id) {
-  var copyText = document.getElementById(id);
-  copyText.select();
+function copy(id) {
+  document.getElementById(id).select();
   document.execCommand('copy');
 }
