@@ -10,6 +10,10 @@ nav a {
   color: rgba(255, 255, 255, .8);
 }
 
+div.main {
+  height: 200em;
+}
+
 div.welcome {
   background: url(../images/abstract-art-background-1020317.jpg);
   border-radius: 0;
@@ -22,6 +26,22 @@ div.welcome h1 {
 
 .instructions p {
   color: rgba(0, 0, 0, 1);
+}
+
+.about {
+  height: 50em;
+}
+
+.contact {
+  margin-left: 2em;
+}
+
+.contact td {
+  padding: .1em .3em;
+}
+
+.contact td:first-child {
+  text-align: right;
 }
 
 label {
@@ -42,16 +62,18 @@ input {
 
 .btn {
   position: relative;
-  right: 2.5em;
-  padding: 0 0.4em;
+  right: 2.2em;
+  padding: 0 0.2em;
 }
 
 footer {
   margin: 0em 2em;
   padding: 1em;
-  height: 100px;
+  height: 60px;
   position: fixed;
   bottom: 0;
   background-color: rgba(108, 76, 230, 1);
-  text-shadow: .05em .05em .05em rgba(255, 255, 255, .2);
+  text-align: right;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: .05em .05em .05em rgba(0, 0, 0, .5);
 }
