@@ -26,11 +26,11 @@ clean:
 	rm -f $(CSS_MINIFIED)
 
 # building CopyPasta
-# npm install 
 
 # target: build - Builds website and preps for deployment
 build:
-  @echo '==> Building $<'
+	npm install
+    
 
 # target: help - Displays help.
 help:
