@@ -1,5 +1,4 @@
 # Example found: https://gist.github.com/rgrove/1116056
-
 # Patterns matching CSS files that should be minified. Files with a -min.css
 # suffix will be ignored.
 CSS_FILES = $(filter-out %-min.css,$(wildcard \
@@ -25,6 +24,13 @@ minify-css: $(CSS_FILES) $(CSS_MINIFIED)
 # target: clean - Removes minified CSS file.
 clean:
 	rm -f $(CSS_MINIFIED)
+
+# building CopyPasta
+# npm install 
+
+# target: build - Builds website and preps for deployment
+build:
+  @echo '==> Building $<'
 
 # target: help - Displays help.
 help:

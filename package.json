@@ -4,7 +4,6 @@
   "description": "\"A web application that copies text from a given input field\"",
   "main": "somejs.js",
   "dependencies": {
-    "bootstrap": "^3.3.7",
     "yuicompressor": "^2.4.8"
   },
   "devDependencies": {},
