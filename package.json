@@ -1,0 +1,24 @@
+{
+  "name": "copy_pasta",
+  "version": "1.0.0",
+  "description": "\"A web application that copies text from a given input field\"",
+  "main": "somejs.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "yuicompressor": "^2.4.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtstodola/CopyPasta.git"
+  },
+  "author": "Jess Stodola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jtstodola/CopyPasta/issues"
+  },
+  "homepage": "https://github.com/jtstodola/CopyPasta#readme"
+}
