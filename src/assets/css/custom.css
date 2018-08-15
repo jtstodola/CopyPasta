@@ -31,7 +31,7 @@ div.welcome h1 {
 }
 
 .about {
-  height: 50em;
+  height: 60em;
 }
 
 .contact {
@@ -47,25 +47,21 @@ div.welcome h1 {
 }
 
 label {
+  margin: .4em .5em .4em 1em;
   width: 5em;
-  margin-right: .5em;
   color: rgba(145, 50, 87, 1);
   font-family: Verdana, Arial, Helvetica, sans-serif;
   text-align: left;
 }
 
-input {
-  width: 18em;
-  height: 3em;
-  padding-left: .3em;
+.form-control {
+  height: 2.3em;
   font-family: Lucida Console, Courier, monospace;
-  font-size: .75em;
 }
 
-.btn {
-  position: relative;
-  right: 2.2em;
-  padding: 0 0.2em;
+.btn-outline-secondary {
+  height: 2.3em;
+  padding-bottom: 0.3em;
 }
 
 footer {
