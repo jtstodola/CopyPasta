@@ -7,7 +7,7 @@ CSS_FILES = $(filter-out %-min.css,$(wildcard \
 ))
 
 # Command to run to execute the YUI Compressor.
-YUI_COMPRESSOR = java -jar yuicompressor-2.4.8.jar
+YUI_COMPRESSOR = java -jar node_modules/yuicompressor/build/yuicompressor-2.4.8.jar
 
 # Flags to pass to the YUI Compressor for both CSS and JS.
 YUI_COMPRESSOR_FLAGS = --charset utf-8 --verbose
