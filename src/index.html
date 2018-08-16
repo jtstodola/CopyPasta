@@ -75,11 +75,10 @@
                    class="form-control" 
                    id="install-input" 
                    value="npm install a-thing">
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary" 
-                      type="button" 
-                      aria-describedby="tip1"
-                      onClick="copy('install-input')">
+            <div class="input-group-append" id="install-btn">
+              <button class="btn btn-secondary"
+                      type="button"
+                      onClick="copy('install')">
                 <i class="fas fa-paste"></i>
               </button>
             </div>
@@ -92,11 +91,10 @@
                    class="form-control" 
                    id="update-input"
                    value="npm update a-thing">
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary" 
+            <div class="input-group-append" id="update-btn">
+              <button class="btn btn-secondary" 
                       type="button" 
-                      aria-label="Copy" aria-describedby="copied"
-                      onClick="copy('update-input')">
+                      onClick="copy('update')">
                 <i class="fas fa-paste"></i>
               </button>
             </div>
@@ -109,10 +107,10 @@
                    class="form-control" 
                    id="uninstall-input" 
                    value="npm uninstall a-thing">
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary" 
+            <div class="input-group-append" id="uninstall-btn">
+              <button class="btn btn-secondary" 
                       type="button"
-                      onClick="copy('uninstall-input')">
+                      onClick="copy('uninstall')">
                 <i class="fas fa-paste"></i>
               </button>
             </div>
@@ -128,11 +126,9 @@
     <script src="assets/js/copy.js"></script>
     <link rel="stylesheet" 
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
-          crossorigin="anonymous">
+>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
-          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" 
-          crossorigin="anonymous">
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" 
+      crossorigin="anonymous">
   </body>
-  
 </html>
