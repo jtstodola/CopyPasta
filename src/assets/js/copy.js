@@ -13,11 +13,11 @@ function copy(id) {
   div.appendChild(span);
   div.setAttribute("id", "copied");
   span.appendChild(textNode);
-  span.setAttribute("style", "margin-left: .3em; position: absolute; background-color: rgba(108, 117, 125, 1); color: rgba(255, 255, 255, 1); padding: .3em; border: 1px black solid; border-radius: .2em;");
+  span.setAttribute("style", "margin-left: .3em; position: absolute; background-color: rgba(246, 246, 246, 1); color: rgba(64, 64, 64, 1); padding: .3em; border: 1px rgba(222, 222, 222, 1) solid; border-radius: .2em;");
   
   setTimeout(function() {
     buttonDiv.removeChild(div);
-  }, 5000);
+  }, 3000);
 }
 
 function showTab(id) {
@@ -30,6 +30,6 @@ function showTab(id) {
   });
   
   tab.classList.add("active");
-  tabPane.classList.add("show", "active"); 
+  tabPane.classList.add("show", "active");
 }
 
