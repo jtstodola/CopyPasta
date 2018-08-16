@@ -11,8 +11,13 @@ function copy(id) {
   
   buttonDiv.appendChild(div);
   div.appendChild(span);
+  div.setAttribute("id", "copied");
   span.appendChild(textNode);
   span.setAttribute("style", "margin-left: .3em; position: absolute; background-color: rgba(108, 117, 125, 1); color: rgba(255, 255, 255, 1); padding: .3em; border: 1px black solid; border-radius: .2em;");
+  
+  setTimeout(function() {
+    buttonDiv.removeChild(div);
+  }, 5000);
 }
 
 function showTab(id) {
