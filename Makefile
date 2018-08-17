@@ -39,9 +39,13 @@ minify-js: $(JS_FILES) $(JS_MINIFIED)
 	$(YUI_COMPRESSOR) $(YUI_COMPRESSOR_FLAGS) --type js $< >$@
 	@echo
 
-# target: clean - Removes minified CSS file.
+# target: clean - Removes minified CSS & JS file.
 clean:
 	rm -f $(CSS_MINIFIED) $(JS_MINIFIED)
+
+#target: remove-dir - Removes public & node_module directories.
+remove-dir:
+	rm -rf public node_modules
 
 # building CopyPasta
 
