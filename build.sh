@@ -3,7 +3,7 @@ chmod +x build.sh
 
 # Install npm packages and minify css
 make build
-make minify-css 
+make minify
 
 # Create public build directory for deployment
 mkdir -p public
