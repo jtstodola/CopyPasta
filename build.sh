@@ -3,17 +3,18 @@ chmod +x build.sh
 
 # Install npm packages and minify css
 make build
-make minify
+grunt
 
 # Image compression
 cd zopfli
 make zopflipng
+mkdir -p ../dist/images
 images_dir=../src/assets/images
 
-for image_file in $images_dir/uncompressed/*
+for image_file in $images_dir/*
 do
-	if [ ! -e $images_dir/compressed/$(basename $image_file) ]; then
-		./zopflipng ../src/assets/images/uncompressed/$(basename $image_file) ../src/assets/images/compressed/$(basename $image_file)
+	if [ ! -e ../dist/images/$(basename $image_file) ]; then
+		./zopflipng ../src/assets/images/$(basename $image_file) ../dist/images/$(basename $image_file)
 	fi
 done
 cd ../
