@@ -11,9 +11,6 @@ JS_FILES = $(filter-out %-min.js,$(wildcard \
 	dist/js/*.js \
 ))
 
-CSS_MINIFIED = $(CSS_FILES:.css=.css)
-JS_MINIFIED = $(JS_FILES:.js=.js)
-
 # target: minify - Minifies CSS and JS.
 minify: minify-css minify-js
 
@@ -25,7 +22,7 @@ minify-js: $(JS_FILES) $(JS_MINIFIED)
 
 # target: clean - Removes minified CSS & JS file.
 clean:
-	rm -f $(CSS_MINIFIED) $(JS_MINIFIED)
+	rm -f $(CSS_FILES) $(JS_FILES)
 
 #target: remove-dir - Removes public, dist, & node_module directories.
 remove-dir:
