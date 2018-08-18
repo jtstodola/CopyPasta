@@ -23,11 +23,6 @@ module.exports = function(grunt) {
         src: 'src/<%= pkg.name %>.js',
         dest: 'build/<%= pkg.name %>.min.js'
       }
-      // dist: {
-      //   files: {
-      //     'dist/js/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
-      //   }
-      // }
     },
     qunit: {
       files: ['test/**/*.html']
