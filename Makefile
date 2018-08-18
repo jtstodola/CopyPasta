@@ -34,7 +34,6 @@ remove-dir:
 build:
 	npm install
 
-
 # target: help - Displays help.
 help:
 	@egrep "^# target:" Makefile

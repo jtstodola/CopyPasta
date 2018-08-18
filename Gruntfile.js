@@ -19,11 +19,15 @@ module.exports = function(grunt) {
       options: {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
       },
-      dist: {
-        files: {
-          'dist/js/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
-        }
+      build: {
+        src: 'src/<%= pkg.name %>.js',
+        dest: 'build/<%= pkg.name %>.min.js'
       }
+      // dist: {
+      //   files: {
+      //     'dist/js/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
+      //   }
+      // }
     },
     qunit: {
       files: ['test/**/*.html']
