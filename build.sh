@@ -21,6 +21,6 @@ cd ../
 
 # Create public build directory for deployment
 mkdir -p public
-rsync -a src node_modules dist public
+rsync -a src dist public
 
 echo 'Build complete. Ready for deployment!'
