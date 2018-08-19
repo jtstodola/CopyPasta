@@ -20,8 +20,8 @@ module.exports = function(grunt) {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
       },
       build: {
-        src: 'src/<%= pkg.name %>.js',
-        dest: 'build/<%= pkg.name %>.min.js'
+        src: 'src/assets/js/<%= pkg.name %>.js',
+        dest: 'dist/js/<%= pkg.name %>.min.js'
       }
     },
     qunit: {
