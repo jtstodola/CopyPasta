@@ -50,8 +50,18 @@ div.input-group {
   margin-top: 1em;
 }
 
+ul.nav-tabs {
+  background-color: rgba(236, 198, 86, .7);
+}
+
 .tab-content, .nav-tabs {
   margin: 0 5em 0 3em;
+  border-top-right-radius: .3em;
+  border-top-left-radius: .3em;
+}
+
+a.tab {
+  color: rgba(104, 104, 104, 1);
 }
 
 input.form-control {
