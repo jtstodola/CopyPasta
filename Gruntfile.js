@@ -9,6 +9,19 @@ module.exports = function(grunt) {
           }
       }
     },
+    imagemin: {
+       dist: {
+          options: {
+            optimizationLevel: 5
+          },
+          files: [{
+             expand: true,
+             cwd: 'src/assets/images',
+             src: ['**/*.{png,jpg,gif}'],
+             dest: 'dist/images/'
+          }]
+       }
+    },
     concat: {
       dist: {
         src: ['src/**/*.js'],
@@ -27,33 +40,27 @@ module.exports = function(grunt) {
     qunit: {
       files: ['test/**/*.html']
     },
-    jshint: {
-      files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
-      options: {
-        // options here to override JSHint defaults
-        globals: {
-          jQuery: true,
-          console: true,
-          module: true,
-          document: true
-        }
-      }
-    },
     watch: {
-      files: ['<%= jshint.files %>'],
-      tasks: ['jshint', 'qunit']
+      css: {
+        files: ['src/assets/css/*.css'],
+        tasks: ['cssmin:dist']
+      },
+      js: {
+        files: ['src/assets/js/*.js'],
+        tasks: ['uglify']
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
 
-  grunt.registerTask('test', ['jshint', 'qunit']);
+  grunt.registerTask('test', ['qunit']);
 
-  grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify', 'cssmin']);
+  grunt.registerTask('default', ['qunit', 'concat', 'uglify', 'cssmin']);
 
 };

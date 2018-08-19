@@ -6,11 +6,11 @@
   "dependencies": {
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-imagemin": "^2.0.1",
     "grunt-contrib-qunit": "^3.0.1",
     "grunt-contrib-uglify": "^3.4.0",
     "grunt-contrib-watch": "^1.1.0",
-    "java": "^0.10.0",
-    "node": "^10.8.0"
+    "java": "^0.10.0"
   },
   "devDependencies": {
     "grunt": "^1.0.3",
