@@ -47,7 +47,7 @@ module.exports = function(grunt) {
       },
       js: {
         files: ['src/assets/js/*.js'],
-        tasks: ['uglify']
+        tasks: ['uglify:build']
       }
     }
   });
