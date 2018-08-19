@@ -21,12 +21,12 @@ minify-css: $(CSS_FILES) $(CSS_MINIFIED)
 minify-js: $(JS_FILES) $(JS_MINIFIED)
 
 # target: clean - Removes minified CSS & JS file.
-clean:
-	rm -f $(CSS_FILES) $(JS_FILES)
+# clean:
+# 	rm -f $(CSS_FILES) $(JS_FILES)
 
 #target: remove-dir - Removes public, dist, & node_module directories.
 remove-dir:
-	rm -rf public dist node_modules
+	rm -rf public node_modules
 
 # building CopyPasta
 
